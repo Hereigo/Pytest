@@ -6,7 +6,7 @@ from tkinter import messagebox
 class MyApp:
     def __init__(self, master):
         self.master = master
-        self.master.after(4000, self.master.focus_force())
+        self.master.after(4000, self.master.focus_force()) # run func after X.000 seconds
         self.master.attributes()
         self.master.bind()
         self.master.config()
