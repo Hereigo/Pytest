@@ -8,7 +8,7 @@ def clicked1():
 
 
 def clicked2():
-    messagebox.showinfo("Messagebox", "Hello, I'm MessageBox!")
+    root.destroy()
 
 
 if __name__ == "__main__":
