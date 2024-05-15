@@ -13,7 +13,7 @@ class MyApp:
         self.master.config()
         # self.master.destroy()
         # self.master.focus_force()
-        self.master.geometry("600x400+600+300")  # <== H х W + L + R
+        self.master.geometry("600x400+600+300")  # <== H х W + L + T
         self.master.grab_set()
         self.master.iconbitmap(
             # ===> _tkinter.TclError: format error in bitmap data
@@ -46,7 +46,10 @@ class MyApp:
         self.btn1.place(x=175, y=350)
         self.btn2.place(x=325, y=350)
 
-    def show_msg(self):
+    def show_msg(self): 
+        self.entry = Entry(fg="yellow", bg="blue", width=50)
+        self.entry.pack()
+        #
         messagebox.showinfo("Messagebox", "Hello, I'm MessageBox!")
 
     def exit_app(self):
